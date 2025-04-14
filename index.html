@@ -1,0 +1,51 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+        <div class="card">
+      <img class="img-list" src="./lista.png" alt="imagem-lista" />
+      <form>
+        <input
+          type="text"
+          class="input-item"
+          id="input-nome"
+          placeholder="digite o nome"
+        />
+        <button class="button-item" type="button">Salvar</button>
+      </form>
+
+      <div class="container-list">
+        <h2>Lista de Nomes</h2>
+        <hr />
+
+        <ul id="name-list">
+          <li>
+            <div class="list-item-container">
+              <input type="checkbox" id="checkbox-1" />
+              <p>Fernanda Alvarenga</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
