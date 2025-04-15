@@ -19,34 +19,27 @@
 
   <body>
     <main>
-        <div class="card">
-      <img class="img-list" src="./lista.png" alt="imagem-lista" />
-      <form>
-        <input
-          type="text"
-          class="input-item"
-          id="input-nome"
-          placeholder="digite o nome"
-        />
-        <button class="button-item" type="button">Salvar</button>
-      </form>
+      <div class="card">
+        <img class="img-list" src="./lista.png" alt="imagem-lista" />
+        <form>
+          <input
+            type="text"
+            class="input-item"
+            id="input-nome"
+            placeholder="digite o nome"
+          />
+          <button class="button-item" type="button">Salvar</button>
+        </form>
 
-      <div class="container-list">
-        <h2>Lista de Nomes</h2>
-        <hr />
+        <div class="container-list">
+          <h2>Lista de Nomes</h2>
+          <hr />
 
-        <ul id="name-list">
-          <li>
-            <div class="list-item-container">
-              <input type="checkbox" id="checkbox-1" />
-              <p>Fernanda Alvarenga</p>
-            </div>
-            <p class="texto-data">segunda-feira(01/01/1980) às 20:00</p>
-          </li>
-        </ul>
+          <ul id="name-list"></ul>
+          <p class="lista-vazia">Nenhum Convidado Adicionado.</p>
+        </div>
       </div>
-    </div>
     </main>
-    <script src="index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

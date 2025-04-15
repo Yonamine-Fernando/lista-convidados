@@ -18,6 +18,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    letter-spacing: 2px;
 }
 
 .card{
@@ -82,6 +83,7 @@ cursor: pointer;
     width: 400px;
     font-family: "Mea Culpa";
     font-size: 24px;
+    overflow: scroll;
 }
 
 .container-list hr{
@@ -98,6 +100,12 @@ cursor: pointer;
 
 .texto-data{
     font-size: 18px;
-    color: #afaaaa;
+    color: #e6e3e3;
+    
+}
+
+.lista-vazia {
+    color :  #3d0101;
+    font-size: 30px;
 }
 
