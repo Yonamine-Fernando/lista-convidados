@@ -1,3 +1,5 @@
+import gerarData from "./gerarData.js";
+
 const inputNome = document.querySelector("#input-nome");
 let contador = 0;
 
@@ -24,20 +26,11 @@ export function criarNomeDaLista() {
         }
     });
 
-
-    const diaSemana = new Date().toLocaleDateString("pt-BR", { weekday: "long" });
-    const data = new Date().toLocaleDateString("pt-BR");
-    const hora = new Date().toLocaleTimeString("pt-BR", {
-        hour: "numeric",
-        minute: "numeric"
-    });
-
     containerNomeDaLista.appendChild(inputCheckBox);
     containerNomeDaLista.appendChild(nomeConvidado);
 
     nomeDaLista.appendChild(containerNomeDaLista);
-    
-    const dataCompleta = `${diaSemana} (${data}) às ${hora}`;
+    const dataCompleta = gerarData();
 
     const mostrarData = document.createElement("p");
     mostrarData.classList.add("texto-data");
@@ -46,6 +39,6 @@ export function criarNomeDaLista() {
     nomeDaLista.appendChild(mostrarData);
 
     return nomeDaLista;
- 
+
 }
 
